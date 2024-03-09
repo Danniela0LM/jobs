@@ -1,0 +1,80 @@
+
+
+$dia=3;
+$mes=11;
+if ($mes == 1) 
+{ 
+    if ($dia >= 21)
+    {
+       echo "Winter";
+     }
+} 
+elseif ($mes == 2) 
+{ 
+    echo "Winter";
+} 
+elseif ($mes == 3) 
+{ 
+if ($dia <= 20)
+{
+ echo "Winter";
+ } else 
+    {
+        echo "Spring";
+    }
+} 
+elseif ($mes == 4) 
+{ 
+        echo "Spring";
+}
+elseif ($mes == 5) 
+{ 
+    echo "Spring";
+} 
+elseif ($mes == 6) 
+{ 
+if ($dia <= 21) 
+    {
+        echo"Spring";
+    } else 
+{
+    echo "Summer";
+}
+} elseif ($mes == 7) 
+{ 
+    echo "Summer";
+} 
+elseif ($mes == 8) 
+{ 
+    echo "Summer";
+} 
+elseif ($mes == 9) 
+{ 
+    if ($dia <= 22)
+        {
+            echo "Summer";
+        } 
+    else {
+            echo "Fall";
+        }
+     } 
+     elseif ($mes == 10)
+      { 
+    echo "Fall";
+    } 
+    elseif ($mes == 11) 
+    { 
+        echo "Fall";
+    } 
+    elseif ($mes == 12)
+     { 
+        if ($dia <= 20) 
+        {
+            echo "Fall";
+        }
+    }
+else 
+{
+  echo "la fecha no existe";
+}
+?>
