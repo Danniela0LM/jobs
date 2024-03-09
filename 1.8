@@ -1,0 +1,123 @@
+bip.php
+<html>
+    <head></head>
+    <body>
+        <h1>4352. Bit de paridad</h1>
+        <h2>Descripción</h2>
+        <p>Un bit de paridad es un dígito binario que indica si el número de bits con 
+        un valor de 1 en un conjunto de bits <br> es par o impar. 
+        Los bits de paridad conforman el método de detección de errores más simple. 
+        Existen dos <br> variantes de este método:<br>
+
+        Bit de paridad par. <br>
+        Bit de paridad impar. <br>
+
+        En el caso de la paridad par, se cuentan el número de unos. Si el total es impar, 
+        el bit de paridad se establece en <br> uno y por tanto la suma del total
+        anterior con este bit de paridad, 
+        daría par. Si el conteo de bits uno es par, <br> entonces 
+        el bit de paridad se deja en 0, pues ya es par.
+        Escribe un programa que sirva para añadir un bit de paridad par a una secuencia de bits.</p>
+
+        <h2>Entrada</h2>
+        <p>La entrada consiste de una sola línea con una secuencia de siete bits 0 o 1.</p>
+
+        <h2>Salida</h2>
+        <p>La salida es la misma secuencia de siete bits de la entrada más el bit de paridad par. 
+        Dicho bit de paridad se agrega al lado derecho.</p>
+
+        <h2>Ejemplo</h2>
+        <table border="3" cellpading="4">
+            <tr>
+                <th>Entrada</th>
+                <th>Salida</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <th>1010001</th>
+                <th>10100011</th>
+                <th>El número de bits con valor de 1 en la entrada es 3. La salida son los 
+                mismos siete <br> bits de la entrada y se añade un bit 1 para que en total el 
+                número de bits con <br> valor 1 sea par.</th>
+            </tr>
+            <tr>
+                <th>1101001</th>
+                <th>11010010</th>
+                <th>El número de bits con valor de 1 en la entrada es 4. La salida son los mismos siete <br>
+                    bits de la entrada y se añade un bit 0 para que en total el número de bits 
+                    con <br> valor 1 se mantenga par.</th>
+            </tr>
+            <tr>
+                <th>0000000</th>
+                <th>00000000</th>
+                <th>El número de bits con valor de 1 en la entrada es 0. La salida son los mismos 
+                    siete <br> bits de la entrada y se añade un bit 0 para que en total el número de 
+                    bits con <br> valor 1 se mantenga par (cero es un número par).</th>
+            </tr>
+            <tr>
+                <th>1111111</th>
+                <th>11111111</th>
+                <th>El número de bits con valor de 1 en la entrada es 7. La salida son los mismos
+                    siete <br> bits de la entrada y se añade un bit 1 para que en total el número de bits
+                    con <br> valor 1 sea par.</th>
+            </tr>
+        </table>
+        <h2>Ejecucion delprograma</h2>
+        <?php
+        
+        ?>
+    </body>
+</html>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+autores.php
+<html>
+    <head></head>
+    <body>
+        <h1>4886. Autores</h1>
+        <h2>Descripción</h2>
+        <p>Los grandes descubrimientos científicos a menudo son nombrados por los apellidos de
+            los científicos que los hici- <br>eron. Por ejemplo, el sistema de criptografía asimétrica
+            más popular, RSA fue descubierto por Rivest, Shamir y <br> Adleman. Otro ejemplo notable es
+            el algoritmo de Knuth-Morris-Pratt, nombrado por Knuth, Morris y Pratt. La <br> referencia
+            de documentos científicos anteriores funciona mucho y es frecuente que un documento 
+            utilice dos <br> convenciones de nomenclatura diferentes: la variación corta (por ejemplo, KMP) 
+            utilizando sólo las primeras le- <br> tras de los autores y la larga variación (por ejemplo, 
+            Knuth-Morris-Pratt) Apellidos completos separados por <br> guiones. Encontramos que la mezcla de dos 
+            convenciones en un papel es estéticamente desagradable y quisiera <br> que usted escribiera un programa
+             que transformara variaciones largas en cortas</p>
+
+        <h2>Entrada</h2>
+        <p>La primera y única línea de entrada contendrá como máximo 100 caracteres, letras 
+        mayúsculas y minúsculas del <br> alfabeto inglés y guión ('-' ASCII 45). El primer carácter
+        siempre será una letra mayúscula. Los guiones siempre se- <br> rán seguidos por una letra mayúscula.
+        Todos los demás caracteres serán letras minúsculas.</p>
+
+        <h2>Salida</h2>
+        <p>La primera y única línea de salida debe contener la variación corta apropiada.</p>
+
+        <h2>Ejemplo</h2>
+        <table border="2" cellpading="4">
+            <tr>
+                <th>Entrada</th>
+                <th>Salida</th>
+            </tr>
+            <tr>
+                <th>Knuth-Morris-Pratt</th>
+                <th>KMP</th>
+            </tr>
+            <tr>
+                <th>Mirko-Slavko</th>
+                <th>MS</th>
+            </tr>
+            <tr>
+                <th>Pasko-Patak</th>
+                <th>PP</th>
+            </tr>
+        </table>
+        <h2>Ejecucion delprograma</h2>
+        <?php
+        
+        ?>
+    </body>
+</html>
