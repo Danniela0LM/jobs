@@ -1,0 +1,39 @@
+<html>
+    <head></head>
+    <body>
+        <h1>2765. Sumando dos conjuntos</h1>
+    <h3>DESCRIPCION</h3>
+    Dados dos conjuntos de enteros de tamaño N, imprimir el resultado de sumarlos. 1<=N<=100. Por ejemplo, sea N=4: <br>
+    2 3 4 5 <br>
+    6 7 1 3 <br>
+    El resultado de sumarlos es: <br>
+    8 10 5 8 <br>
+    <h3>ENTRADA</h3>
+    En la primera línea el entero N. En la segunda línea, <br>
+    separados por un espacio, los números del primer conjunto.<br>
+     En la tercera línea también separados por un espacio, los números del segundo<br>
+     conjunto.<br>
+     <H3>SALIDA</H3>
+     Los números resultantes de sumar ambos conjuntos, separados por un espacio.
+     <H3>EJEMPLOOOOSS</H3>
+    
+     <?php
+
+$N = intval(trim(fgets(STDIN)));
+$num1 = array_map('intval', explode(' ', trim(fgets(STDIN))));
+$num2 = array_map('intval', explode(' ', trim(fgets(STDIN))));
+    if (count($num1) != $N || count($num2) != $N) 
+    {
+        exit("Los conjuntos no tienen el mismo tamaño.\n");
+    }
+$resultado = array();
+for ($i = 0; $i < $N; $i++) 
+{
+    $resultado[] = $num1[$i] + $num2[$i];
+}
+
+echo implode(' ', $resultado) . "\n";
+
+?>
+    </body>
+</html>
