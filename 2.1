@@ -1,0 +1,37 @@
+<?php
+$b=5;
+$c=3;
+$g=(7*$b-3)%($c*$c+1);
+echo "Valor de g: " , $g;
+echo "<br>";
+$a=2;
+$f=(4*$a*$a*$a)+$g*(2*$a-3*$a);
+echo "valor de f: " , $f;
+echo "<br>";
+if(isset($_POST["tx"]) && isset($_POST["ty"]) && isset($_POST["tz"]))
+{
+    $x = $_POST["tx"];
+    $y = $_POST["ty"];
+    $z = $_POST["tz"];
+    $h = $f * ($x / $y) + 3 * $g * ($z / $y * $x);
+    echo "Valor de h: " , $h;
+}
+?>
+---------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulas</title>
+</head>
+<body>
+    <h1>Buscar x, y,z</h1>
+    <form action="funciones.php" method="POST">
+        <label for="tx">X: <input type="text" id="tx" name="tx" required></label><br>
+        <label for="ty">Y: <input type="text" id="ty" name="ty" required></label><br>
+        <label for="tz">Z: <input type="text" id="tz" name="tz" required></label><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
